@@ -87,7 +87,7 @@ Hence, a unitary cloning machine can only clone states from a mutually orthogona
 
 ---
 
-### 4. Alternative Proof via Linearity
+Alternative Proof via Linearity
 
 Suppose $U$ successfully clones two orthogonal basis states $\vert 0\rangle$ and $\vert 1\rangle$:
 $$U \big(\vert 0\rangle \vert 0\rangle\big) = \vert 0\rangle \vert 0\rangle = \vert 00\rangle$$
@@ -110,8 +110,7 @@ The cross terms $\alpha\beta(\vert 01\rangle + \vert 10\rangle)$ vanish if and o
 Therefore, **universal quantum cloning violates the linearity of quantum mechanics**.
 
 ---
-
-### 5. Extension to Open Systems (CPTP Maps & Density Matrices)
+Extension to Open Systems (CPTP Maps & Density Matrices)
 
 The theorem also holds for general open quantum systems where cloning is attempted via a Completely Positive Trace-Preserving (CPTP) map $\mathcal{E}(\rho)$:
 
@@ -125,13 +124,6 @@ leads directly to:
 $$\mathcal{F}(\rho \otimes \rho, \, \sigma \otimes \sigma) = \big[\mathcal{F}(\rho, \sigma)\big]^2 \le \mathcal{F}(\rho, \sigma)$$
 
 Since $x^2 \le x$ for $x \in [0, 1]$, equality holds strictly when $x = 0$ (orthogonal supports) or $x = 1$ (identical states). Hence, mixed states cannot be universally cloned.
-
-
----
-
-## Meet the Characters: The Vault and the Messenger
-
-Inside our quantum computer sits a tough crystal called **Silicon Carbide (4H
 
 
 # The Young Physicist's Guide to Quantum Repeaters: An Unbroken Story of Light, Spins, and Equations
