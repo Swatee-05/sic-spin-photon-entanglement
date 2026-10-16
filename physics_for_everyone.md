@@ -36,6 +36,97 @@ Nature has a strict rule called the **No-Cloning Theorem**:
 
 If anyone tries to look at or copy our spinning coin midway, it instantly falls flat and the secret vanishes! To send information far away, we cannot copy it—we must **teleport** it using **entanglement** (connecting two particles like invisible twins).
 
+The **No-Cloning Theorem** (Wootters & Zurek, 1982; Dieks, 1982) establishes that there is no physical operation in quantum mechanics capable of creating an exact copy of an arbitrary, unknown quantum state.
+
+Let $\mathcal{H}_A$ be a complex Hilbert space of dimension $d \ge 2$ representing the target quantum system to be copied, and let $\mathcal{H}_B \cong \mathcal{H}_A$ be an ancillary system initialized to a standardized reference state $\vert 0\rangle_B$.
+
+The composite system lives in the tensor product space:
+$$\mathcal{H} = \mathcal{H}_A \otimes \mathcal{H}_B$$
+
+Any deterministic, closed quantum evolution is governed by a **unitary operator** $U$:
+$$U^\dagger U = U U^\dagger = \mathbb{I}$$
+
+An inner product between two product states in $\mathcal{H}$ decomposes as:
+$$\langle \psi_1 \otimes \phi_1 \mid \psi_2 \otimes \phi_2 \rangle = \langle \psi_1 \mid \psi_2 \rangle \cdot \langle \phi_1 \mid \phi_2 \rangle$$
+
+A unitary operator $U$ is defined as a **universal quantum cloning machine** if, for *every* normalized pure state $\vert\psi\rangle \in \mathcal{H}_A$ and a fixed initial blank state $\vert 0\rangle_B \in \mathcal{H}_B$, it satisfies:
+
+$$U \big( \vert\psi\rangle_A \otimes \vert 0\rangle_B \big) = e^{i\theta(\psi)} \big( \vert\psi\rangle_A \otimes \vert\psi\rangle_B \big)$$
+
+Without loss of generality, we absorb any global phase factor $e^{i\theta(\psi)}$ into the definition of the output state:
+$$U \big( \vert\psi\rangle \vert 0\rangle \big) = \vert\psi\rangle \vert\psi\rangle$$
+
+### Proof via Unitary Inner-Product Invariance
+
+Let $\vert\psi\rangle, \vert\phi\rangle \in \mathcal{H}_A$ be two distinct, normalized arbitrary quantum states such that:
+$$\langle\psi\mid\psi\rangle = 1, \quad \langle\phi\mid\phi\rangle = 1, \quad \langle\psi\mid\phi\rangle = c \in \mathbb{C}$$
+
+Assuming $U$ is a valid cloner, it must successfully clone both states individually:
+1. $U \big( \vert\psi\rangle \vert 0\rangle \big) = \vert\psi\rangle \vert\psi\rangle$
+2. $U \big( \vert\phi\rangle \vert 0\rangle \big) = \vert\phi\rangle \vert\phi\rangle$
+
+Now, compute the inner product of the transformed states:
+$$\big\langle U(\psi \otimes 0) \;\big|\; U(\phi \otimes 0) \big\rangle = \big( \langle\psi\vert \langle 0\vert U^\dagger \big) \big( U \vert\phi\rangle \vert 0\rangle \big)$$
+
+Because $U$ is unitary, $U^\dagger U = \mathbb{I}$, preserving the inner product:
+$$\big\langle U(\psi \otimes 0) \;\big|\; U(\phi \otimes 0) \big\rangle = \langle\psi \vert \phi\rangle \cdot \langle 0 \vert 0\rangle = \langle\psi \vert \phi\rangle = c$$
+
+Now evaluate the inner product directly using the expected output states:
+$$\big\langle \psi \otimes \psi \;\big|\; \phi \otimes \phi \big\rangle = \langle\psi \vert \phi\rangle \cdot \langle\psi \vert \phi\rangle = c^2$$
+
+Equating both expressions:
+$$c = c^2 \iff c(1 - c) = 0$$
+
+This yields two solutions:
+$$c = 0 \quad \text{or} \quad c = 1$$
+
+* If $c = 0$, then $\langle\psi\mid\phi\rangle = 0$ (the two states are strictly orthogonal).
+* If $c = 1$, then $\vert\psi\rangle = \vert\phi\rangle$ (the states are physically identical).
+
+Hence, a unitary cloning machine can only clone states from a mutually orthogonal set $\{\vert k\rangle\}$ where $\langle j \mid k \rangle = \delta_{jk}$. It is impossible for a unitary transformation to clone an arbitrary, non-orthogonal state $\vert\phi\rangle$ if $\vert\psi\rangle$ can also be cloned.
+
+---
+
+### 4. Alternative Proof via Linearity
+
+Suppose $U$ successfully clones two orthogonal basis states $\vert 0\rangle$ and $\vert 1\rangle$:
+$$U \big(\vert 0\rangle \vert 0\rangle\big) = \vert 0\rangle \vert 0\rangle = \vert 00\rangle$$
+$$U \big(\vert 1\rangle \vert 0\rangle\big) = \vert 1\rangle \vert 1\rangle = \vert 11\rangle$$
+
+Now consider an arbitrary coherent superposition:
+$$\vert\psi\rangle = \alpha\vert 0\rangle + \beta\vert 1\rangle, \quad \text{with } \alpha \neq 0, \; \beta \neq 0, \; |\alpha|^2 + |\beta|^2 = 1$$
+
+Applying $U$ to the input state $\vert\psi\rangle \vert 0\rangle$ using the **linearity** of quantum operators:
+$$U \big( \vert\psi\rangle \vert 0\rangle \big) = U \Big( (\alpha\vert 0\rangle + \beta\vert 1\rangle) \vert 0\rangle \Big) = \alpha\, U(\vert 00\rangle) + \beta\, U(\vert 10\rangle) = \alpha\vert 00\rangle + \beta\vert 11\rangle$$
+
+However, a true cloned state must satisfy:
+$$\vert\psi\rangle \otimes \vert\psi\rangle = (\alpha\vert 0\rangle + \beta\vert 1\rangle) \otimes (\alpha\vert 0\rangle + \beta\vert 1\rangle) = \alpha^2\vert 00\rangle + \alpha\beta\vert 01\rangle + \beta\alpha\vert 10\rangle + \beta^2\vert 11\rangle$$
+
+Subtracting the actual output from the target cloned state:
+$$(\vert\psi\rangle \vert\psi\rangle) - U(\vert\psi\rangle\vert 0\rangle) = (\alpha^2 - \alpha)\vert 00\rangle + \alpha\beta\vert 01\rangle + \beta\alpha\vert 10\rangle + (\beta^2 - \beta)\vert 11\rangle \neq 0$$
+
+The cross terms $\alpha\beta(\vert 01\rangle + \vert 10\rangle)$ vanish if and only if $\alpha = 0$ or $\beta = 0$, which restricts $\vert\psi\rangle$ to the computational basis states. 
+
+Therefore, **universal quantum cloning violates the linearity of quantum mechanics**.
+
+---
+
+### 5. Extension to Open Systems (CPTP Maps & Density Matrices)
+
+The theorem also holds for general open quantum systems where cloning is attempted via a Completely Positive Trace-Preserving (CPTP) map $\mathcal{E}(\rho)$:
+
+$$\mathcal{E}: \mathcal{S}(\mathcal{H}_A) \to \mathcal{S}(\mathcal{H}_A \otimes \mathcal{H}_B)$$
+
+If a channel satisfies $\operatorname{Tr}_B[\mathcal{E}(\rho)] = \rho$ and $\operatorname{Tr}_A[\mathcal{E}(\rho)] = \rho$ for all states $\rho$, the monotonicity of the quantum relative entropy ($S(\rho \parallel \sigma)$) or fidelity ($\mathcal{F}(\rho_1, \rho_2)$) under CPTP operations:
+
+$$\mathcal{F}\big(\mathcal{E}(\rho), \mathcal{E}(\sigma)\big) \ge \mathcal{F}(\rho, \sigma)$$
+
+leads directly to:
+$$\mathcal{F}(\rho \otimes \rho, \, \sigma \otimes \sigma) = \big[\mathcal{F}(\rho, \sigma)\big]^2 \le \mathcal{F}(\rho, \sigma)$$
+
+Since $x^2 \le x$ for $x \in [0, 1]$, equality holds strictly when $x = 0$ (orthogonal supports) or $x = 1$ (identical states). Hence, mixed states cannot be universally cloned.
+
+
 ---
 
 ## Meet the Characters: The Vault and the Messenger
