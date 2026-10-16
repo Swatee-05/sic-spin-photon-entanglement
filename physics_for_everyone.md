@@ -2,7 +2,7 @@
 
 Welcome! Have you ever wondered how to send a secret message across the planet instantly without anyone being able to snoop or copy it? 
 
-Ordinary computers (Classical; regular laptops for example) use electrical pulses along wires, basically using electricity to transmit information. But in a different architecture, we can use **sparkling crystals**, **spinning atoms**, and **packets of light (photons)** to build the future Quantum Internet! In scientific terms, its the color centers in Silicon Carbide.
+Ordinary computers (Classical; regular laptops for example) use electrical pulses along wires, basically using electricity to transmit information. But in a different architecture, we can use **sparkling crystals**, **spinning atoms**, and **packets of light (photons)** to build the future Quantum Internet! In scientific terms, its the color centers in Silicon Carbide (SiC).
 
 ---
 
