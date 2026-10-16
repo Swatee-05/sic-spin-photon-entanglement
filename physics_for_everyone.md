@@ -162,7 +162,7 @@ Inside each defect lives a powerful team:
 |                                                 v           |
 |                                          FLYING PHOTON      |
 +-------------------------------------------------------------+
-```[cite: 1]
+```
 
 
 ## 🔦 The Magic Trick: Turning Spin into Light
@@ -189,7 +189,7 @@ Alice's Photon ===\       /===> Detector 1 [CLICK!]
                   [ MAGIC MIRROR ]
                    /     \
 Bob's Photon =====/       \===> Detector 2
-```[cite: 1]
+```
 
 * When a photon hits the mirror, it has a 50% chance of passing straight through and a 50% chance of reflecting[cite: 1].
 * When a detector clicks, **it is completely impossible to know whether the photon came from Alice or Bob!**[cite: 1]
