@@ -170,7 +170,7 @@ Inside each defect lives a powerful team:
 How do you get a secret stored inside a solid crystal out into the world? You turn it into light!
 
 1. We shoot a very sharp, precise laser pulse at the Messenger electron.
-2. If the Messenger is in state **$1$**, it catches the energy and spits out a tiny flash—a **single photon** of light!
+2. If the Messenger is in state **$1$**, it catches the energy and spits out a tiny flash - a **single photon** of light!
 3. If the Messenger is in state **$0$**, it ignores the laser and stays silent.
 
 Because the electron was in a superposition of both states, something astonishing happens: **the particle of light and the crystal electron become quantum-entangled twins!** Wherever the photon flies, it remains linked to the crystal back in the lab.
