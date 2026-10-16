@@ -178,7 +178,7 @@ Finally, to grade how well our simulated repeater functions, we quantify the gen
 
 $$\mathcal{F} = \langle\Psi^+\vert \rho \vert\Psi^+\rangle = \frac{1}{2}\left(\rho_{01,01} + \rho_{10,10} + 2\text{Re}(\rho_{01,10})\right)$$
 
-A score of $\mathcal{F} = 1.0$ represents a flawless Bell state, while any value strictly above $0.50$ exceeds classical correlation bounds, proving the presence of genuine quantum entanglement. In our 4H-SiC simulation, Barrett-Kok achieves a fidelity of $\mathcal{F}_{\text{BK}} \approx 0.967$ ($96.7\%$), while the single-photon protocol achieves $\mathcal{F}_{\text{SP}} \approx 0.938$ ($93.8\%$). In our 4H-SiC simulation, Barrett-Kok achieves a fidelity of $\mathcal{F}_{\text{BK}} \approx 0.967$ ($96.7\%$), while the single-photon protocol achieves $\mathcal{F}_{\text{SP}} \approx 0.938$ ($93.8\%$).
+A score of $\mathcal{F} = 1.0$ represents a flawless Bell state, while any value strictly above $0.50$ exceeds classical correlation bounds, proving the presence of genuine quantum entanglement. In our 4H-SiC simulation, Barrett-Kok achieves a fidelity of $\mathcal{F}_{\text{BK}} \approx 0.967$ ($96.7\%$), while the single-photon protocol achieves $\mathcal{F}_{\text{SP}} \approx 0.938$ ($93.8\%$).
 
 The second metric is Wootters Concurrence ($\mathcal{C}$), which measures the non-classical entanglement of formation for an arbitrary mixed state. We compute the spin-flipped density matrix:
 
