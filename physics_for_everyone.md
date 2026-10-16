@@ -17,7 +17,7 @@ Ordinary computers (Classical; regular laptops for example) use electrical pulse
 
 ---
 
-## 🪙 The Superpower: Spinning Coins (Qubits)
+## The Superpower: Spinning Coins (Qubits)
 
 In regular computers (like your phone or game console), information is stored as **bits**:
 * A regular bit is like a coin lying flat on a table. It is either **Heads** ($0$) or **Tails** ($1$).
@@ -27,7 +27,7 @@ In quantum mechanics, things get wild:
 
 ---
 
-## 🚫 Why You Cannot Photocopy Quantum Secrets
+## Why You Cannot Photocopy Quantum Secrets
 
 Normally, if an internet signal gets weak over long cables, a booster machine reads the signal, copies it, and sends fresh copies down the road.
 
@@ -38,7 +38,7 @@ If anyone tries to look at or copy our spinning coin midway, it instantly falls 
 
 ---
 
-## 💎 Meet the Characters: The Vault and the Messenger
+## Meet the Characters: The Vault and the Messenger
 
 Inside our quantum computer sits a tough crystal called **Silicon Carbide (4H
 
