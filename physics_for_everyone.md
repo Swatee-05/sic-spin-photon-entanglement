@@ -2,6 +2,8 @@
 
 Welcome! Have you ever wondered how to send a secret message across the planet instantly without anyone being able to snoop or copy it? 
 
+standard phones and radios rely on classical electromagnetic signals that can be intercepted, copied, or broadcast across open channels, whereas a quantum repeater network connects two specific, distant stations through a direct, private communication link. Much like push-to-talk walkie-talkies that link two devices across a channel, a quantum node pairs stationary qubits via single photons so two parties can exchange confidential information without an intermediary eavesdropping—except that in this "quantum" version, the connection is forged through entanglement, meaning any attempt to tap into the frequency instantly breaks the connection.
+
 Ordinary computers (Classical; regular laptops for example) use electrical pulses along wires, basically using electricity to transmit information. But in a different architecture, we can use **sparkling crystals**, **spinning atoms**, and **packets of light (photons)** to build the future Quantum Internet! In scientific terms, its the color centers in Silicon Carbide (SiC).
 
 ---
